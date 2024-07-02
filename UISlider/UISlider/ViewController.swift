@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
     }
-
-
+    
+    @IBAction func sliderAction(_ sender: Any) {
+        textField.text = String(slider.value)
+    }
+    
+    @IBAction func textFieldAction(_ sender: Any) {
+        slider.value = Float(textField.text!) ?? 0.0
+    }
+    
 }
 
