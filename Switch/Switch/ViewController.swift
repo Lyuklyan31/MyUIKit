@@ -8,12 +8,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+    
+    @IBOutlet weak var switchNotification: UISwitch!
+    @IBOutlet weak var switchSounds: UISwitch!
+    
+    @IBOutlet weak var switchBanners: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
     }
-
+    @IBAction func switchNotificationAction(_ sender: Any) {
+        if switchNotification.isOn == false {
+            switchSounds.isEnabled = false
+            switchBanners.isEnabled = false
+            switchSounds.isOn = false
+            switchBanners.isOn = false
+        } else {
+            switchSounds.isEnabled = true
+            switchBanners.isEnabled = true
+            switchSounds.isOn = true
+            switchBanners.isOn = true
+        }
+    }
+    
 
 }
 
