@@ -13,6 +13,7 @@
 		849887902C35436C0026244E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8498878F2C35436C0026244E /* Base */; };
 		849887922C35436E0026244E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849887912C35436E0026244E /* Assets.xcassets */; };
 		849887952C35436E0026244E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 849887942C35436E0026244E /* Base */; };
+		8498879D2C3546600026244E /* TextPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498879C2C3546600026244E /* TextPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		849887912C35436E0026244E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849887942C35436E0026244E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849887962C35436E0026244E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8498879C2C3546600026244E /* TextPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				849887882C35436C0026244E /* AppDelegate.swift */,
 				8498878A2C35436C0026244E /* SceneDelegate.swift */,
 				8498878C2C35436C0026244E /* ViewController.swift */,
+				8498879C2C3546600026244E /* TextPicker.swift */,
 				8498878E2C35436C0026244E /* Main.storyboard */,
 				849887912C35436E0026244E /* Assets.xcassets */,
 				849887932C35436E0026244E /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				8498878D2C35436C0026244E /* ViewController.swift in Sources */,
 				849887892C35436C0026244E /* AppDelegate.swift in Sources */,
 				8498878B2C35436C0026244E /* SceneDelegate.swift in Sources */,
+				8498879D2C3546600026244E /* TextPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
