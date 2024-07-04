@@ -13,6 +13,7 @@
 		848520C92C3725F100442B2A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 848520C82C3725F100442B2A /* Base */; };
 		848520CB2C3725F300442B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848520CA2C3725F300442B2A /* Assets.xcassets */; };
 		848520CE2C3725F300442B2A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 848520CD2C3725F300442B2A /* Base */; };
+		848520D62C37283500442B2A /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848520D52C37283500442B2A /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		848520CA2C3725F300442B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848520CD2C3725F300442B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		848520CF2C3725F300442B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848520D52C37283500442B2A /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				848520C32C3725F100442B2A /* SceneDelegate.swift */,
 				848520C52C3725F100442B2A /* ViewController.swift */,
 				848520C72C3725F100442B2A /* Main.storyboard */,
+				848520D52C37283500442B2A /* Cell.swift */,
 				848520CA2C3725F300442B2A /* Assets.xcassets */,
 				848520CC2C3725F300442B2A /* LaunchScreen.storyboard */,
 				848520CF2C3725F300442B2A /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				848520C62C3725F100442B2A /* ViewController.swift in Sources */,
+				848520D62C37283500442B2A /* Cell.swift in Sources */,
 				848520C22C3725F100442B2A /* AppDelegate.swift in Sources */,
 				848520C42C3725F100442B2A /* SceneDelegate.swift in Sources */,
 			);

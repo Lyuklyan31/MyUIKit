@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import UIKit
+
+class Cell: UICollectionViewCell {
+    @IBOutlet weak var label: UILabel!
+}
