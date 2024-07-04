@@ -7,39 +7,56 @@
 
 import UIKit
 
+var dataBase: [String] = ["1", "2", "3"]
+
 class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return dataBase.count
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = UITableViewCell()
+        var configuration = UIListContentConfiguration.cell()
+        configuration.text = dataBase[indexPath.row]
+        cell.contentConfiguration = configuration
+        
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action1 = UIContextualAction(style: .normal, title: "Action 1") { _, _, completion in
+            print("Leading 1 -\(dataBase[indexPath.row])")
+            completion(true)
+        }
+        
+        let action2 = UIContextualAction(style: .normal, title: "Action 2") { _, _, completion in
+            print("Leading 2 -\(dataBase[indexPath.row])")
+            completion(true)
+        }
+        
+        action2.backgroundColor = .blue
+        
+       return UISwipeActionsConfiguration(actions: [action1, action2])
+    }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action1 = UIContextualAction(style: .normal, title: "Action 1") { _, _, completion in
+            print("Trailing 2 -\(dataBase[indexPath.row])")
+            completion(true)
+        }
+        
+        action1.backgroundColor = .red
+        action1.image = UIImage(systemName: "trash")
+        
+       return UISwipeActionsConfiguration(actions: [action1])
+    }
 
     /*
     // Override to support conditional editing of the table view.
