@@ -9,10 +9,23 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    static func show(in viewController: UIViewController, param: String) {
+    let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "viewController2SID") as! ViewController2
+        
+        vc.param = param
+        viewController.present(vc, animated: true)
+    }
+    
+    @IBOutlet weak var button: UIButton!
+    var param: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        button.setTitle(param, for: .normal)
+        
+    }
+    @IBAction func pushCloseAction(_ sender: Any) {
+        dismiss(animated: true)
     }
     
 

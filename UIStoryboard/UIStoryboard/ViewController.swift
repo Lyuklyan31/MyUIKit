@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func pushMe(_ sender: Any) {
+        ViewController2.show(in: self, param: "SUPER CLOSE")
+    }
+    
 }
 
