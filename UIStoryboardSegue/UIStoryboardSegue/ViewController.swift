@@ -13,7 +13,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func pushButtonAction(_ sender: Any) {
+        performSegue(withIdentifier: "goToVC2SID", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        (segue.destination as! ViewController2).param = "Button label"
+    }
 
 }
 

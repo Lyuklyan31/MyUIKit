@@ -9,13 +9,20 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    
+    var param: String!
+    @IBOutlet weak var buttonClouse: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        buttonClouse.setTitle(param, for: .normal)
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func pushClouseAction(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
