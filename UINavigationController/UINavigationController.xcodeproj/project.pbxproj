@@ -13,6 +13,7 @@
 		8473A3222C3D2D2500B9D2E1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8473A3212C3D2D2500B9D2E1 /* Base */; };
 		8473A3242C3D2D2700B9D2E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8473A3232C3D2D2700B9D2E1 /* Assets.xcassets */; };
 		8473A3272C3D2D2700B9D2E1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8473A3262C3D2D2700B9D2E1 /* Base */; };
+		84FE1E882C3E957400634A19 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE1E872C3E957400634A19 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8473A3232C3D2D2700B9D2E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8473A3262C3D2D2700B9D2E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8473A3282C3D2D2700B9D2E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FE1E872C3E957400634A19 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				8473A31C2C3D2D2500B9D2E1 /* SceneDelegate.swift */,
 				8473A31E2C3D2D2500B9D2E1 /* ViewController.swift */,
 				8473A3202C3D2D2500B9D2E1 /* Main.storyboard */,
+				84FE1E872C3E957400634A19 /* ViewController2.swift */,
 				8473A3232C3D2D2700B9D2E1 /* Assets.xcassets */,
 				8473A3252C3D2D2700B9D2E1 /* LaunchScreen.storyboard */,
 				8473A3282C3D2D2700B9D2E1 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8473A31F2C3D2D2500B9D2E1 /* ViewController.swift in Sources */,
+				84FE1E882C3E957400634A19 /* ViewController2.swift in Sources */,
 				8473A31B2C3D2D2500B9D2E1 /* AppDelegate.swift in Sources */,
 				8473A31D2C3D2D2500B9D2E1 /* SceneDelegate.swift in Sources */,
 			);

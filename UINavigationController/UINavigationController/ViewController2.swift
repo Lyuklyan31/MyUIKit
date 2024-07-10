@@ -14,6 +14,9 @@ class ViewController2: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func pushBackAction(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     
 
     /*
